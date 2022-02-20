@@ -15,3 +15,13 @@ body::before {
     width: 50%;
   }
 }
+
+/* .layer {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  transform: 0.5s;
+}
+.layer:hover {
+  background: rgba(226, 0, 0, 0.5);
+} */
