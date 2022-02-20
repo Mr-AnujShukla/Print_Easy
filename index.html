@@ -355,24 +355,29 @@
               </tr>
               <tr>
                 <td>
-                  <SELECT NAME="memoryItem" onChange="calculatePrice()" id="memoryItem">
-                    <OPTION value="0">--Select One Choice--</OPTION>
+                  <SELECT class="form-select" aria-label="Default select example" NAME="memoryItem"
+                    onChange="calculatePrice()" id="memoryItem">
+                    <OPTION value="0">--Print Type--</OPTION>
                     <OPTION value="5">Coloured</OPTION>
                     <OPTION value="2">Black & White</OPTION>
                   </SELECT>
                 </td>
-                <td><input type="text" id="memoryItemQty" value="0" onChange="calculatePrice()" /></td>
+                <td><input type="text" class="form-control" id="memoryItemQty" value="0" placeholder="pages"
+                    onChange="calculatePrice()" />
+                </td>
               </tr>
               <tr>
                 <td>
-                  <SELECT NAME="hddItem" onChange="calculatePrice()" id="hddItem">
+                  <SELECT class="form-select" aria-label="Default select example" NAME="hddItem"
+                    onChange="calculatePrice()" id="hddItem">
                     <OPTION value="0">--Select Size--</OPTION>
                     <OPTION value="0">A4</OPTION>
                     <OPTION value="0">A3</OPTION>
                   </SELECT>
                 </td>
                 <td>
-                  <SELECT NAME="hddItem" onChange="calculatePrice()" id="hddItem">
+                  <SELECT class="form-select" aria-label="Default select example" NAME="hddItem"
+                    onChange="calculatePrice()" id="hddItem">
                     <OPTION value="0">--Select Time Slot--</OPTION>
                     <OPTION value="0">9:00 - 11:00 AM</OPTION>
                     <OPTION value="0">2:00 - 4:00 PM</OPTION>
@@ -385,7 +390,7 @@
             </table>
           </form>
           <button type="button" onclick="calculatePrice()">Calculate</button>
-          Total:<INPUT type="text" id="PicExtPrice" Size=8>
+          Total:<INPUT type="text" class="form-control" id="PicExtPrice" Size=4>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
